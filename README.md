@@ -1,4 +1,5 @@
 # cron-job
+* A Linux utility which schedules a command/script on your server to run automatically at specified times/dates. Used for scheduling repetitive tasks.
 
 ## [Logs](http://unix.stackexchange.com/questions/207/where-are-cron-errors-logged) ##
 * Check logs in /etc/rsyslog.d/50-default.conf
@@ -10,6 +11,9 @@
 ```bash
 * * * * * /usr/bin/php /path/to/script.php
 ```
+* [Managing Cron Jobs With PHP](https://code.tutsplus.com/tutorials/managing-cron-jobs-with-php--net-19428)
 
-## Using cron ##
-
+## Using [crontab](http://www.computerhope.com/unix/ucrontab.htm) ##
+```bash
+crontab -e
+```
