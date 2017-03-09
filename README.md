@@ -24,4 +24,4 @@ crontab -e
 * 5 * * 1-5 /path/to/script.sh > /path/to/backup.log 2>&1
 ```
 * "2>&1" meaning => standard error (2>) is redirected to the same file descriptor that is pointed by standard output (&1)
-
+* Use >> instead of > to append output
